@@ -6,7 +6,7 @@ const List = ({ items }) => {
       {items.map((item, index) => {
         if (index !== items.length && index !== 0) {
           return (
-            <span key={index}>
+            <span key={index} className="flex items-center">
               <p id="list-devider" className="px-4">/</p>
               <ListItem name={ item.name } link={item.link}/>
             </span>

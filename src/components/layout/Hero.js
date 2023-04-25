@@ -17,10 +17,10 @@ const Hero = () => {
       />
       <span id="greeting" className="flex gap-2 items-center justify-center text-md font-medium mt-2 text-primary dark:text-text-primary">{t("common:myname")}<FaHandPeace size={16}/></span>
       <div id="introduction" className="w-3/4 md:w-1/2 mx-auto">
-        <h2 className="text-3xl md:text-5xl mt-4 text-center text-primary text-opacity-50 dark:text-transparent bg-clip-text bg-gradient-to-r from-text-primary">"Building <span className="text-[#003049] text-opacity-50">responsive applications</span> , both on mobile and web."</h2>
+        <h2 className="text-3xl md:text-5xl mt-4 text-center text-primary text-opacity-50 dark:text-transparent bg-clip-text bg-gradient-to-r from-text-primary">Building <span className="text-[#003049] text-opacity-50">responsive applications</span> , both on mobile and web.</h2>
       </div>
       <div id="learn-more" className="flex flex-row gap-2 mt-8 w-fit mx-auto">
-        <a href="/" 
+        <a 
           onClick={e => {
             let contact = document.getElementById("contact");
             e.preventDefault();  // Stop Page Reloading
