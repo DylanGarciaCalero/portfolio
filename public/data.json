@@ -3,23 +3,20 @@
     "id": 1,
     "name": "diorama",
     "image": "/images/diorama-preview.jpg",
-    "description": "This project was created as a collaboration project for Arteveldehogeschool. It enables collaboration between campusses and organisations to connect in order to organise events.",
+    "description": "This was a project made for our class of interactive media. The final idea was to create a cubicle room that would consist out of 3D items made in blender, visualised in the web using Three.js.",
     "github": "https://github.com/pgmgent-2122-im/diorama-DylanGarciaCalero",
     "technologies": [
       "react",
       "react-three-fiber",
       "threejs",
-      "firebase",
-      "Illustrator",
-      "geolocation API",
-      "leaflet"
+      "blender"
     ]
   },
   {
     "id": 2,
     "name": "artifact",
     "image": "/images/artifact-preview.png",
-    "description": "This project was created as a collaboration project for Arteveldehogeschool. It enables collaboration between campusses and organisations to connect in order to organise events.",
+    "description": "This mobile application is a instagram-like social media with the ability to make posts that are bound to geolocations.",
     "github": "https://github.com/DylanGarciaCalero/Artifact",
     "technologies": [
       "react",
@@ -27,7 +24,9 @@
       "expo",
       "expo-location",
       "firebase",
-      "firestore"
+      "firestore",
+      "yup",
+      "formik"
     ]
     
   },
