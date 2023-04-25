@@ -9,9 +9,10 @@ const Hero = () => {
   const { t } = useTranslation()
 
   return (
-    <section id="hero" className="w-full pb-24 lg:w-full mx-auto pt-14 md:pt-0 md:h-big md:flex md:flex-col md:justify-center bg-white dark:bg-primary rounded-b-lg ">
+    <section id="hero" className="w-full pb-24 lg:w-full mx-auto pt-10 md:pt-0 md:h-big md:flex md:flex-col md:justify-center bg-white dark:bg-primary rounded-b-lg ">
       <Image
         src={selfie}
+        alt="selfie"
         className="w-32 h-32 md:h-32 md:w-32 object-cover border-2 border-primary rounded-full mx-auto md:mt-8"
       />
       <span id="greeting" className="flex gap-2 items-center justify-center text-md font-medium mt-2 text-primary dark:text-text-primary">{t("common:myname")}<FaHandPeace size={16}/></span>

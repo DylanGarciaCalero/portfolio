@@ -7,7 +7,7 @@ const MobileNavigation = () => {
     <nav className="w-screen h-24 fixed overflow-hidden before:shadow-mobileNav dark:before:shadow-mobileNavDark before:absolute before:bottom-3/4 before:w-screen before:h-full before:rounded-3xl bottom-0 md:hidden">
       <ul className="flex w-full justify-evenly absolute bottom-0 h-16 items-center">
         <li>
-          <a href="/"  className='flex flex-col justify-center items-center gap-1' 
+          <a className='flex flex-col justify-center items-center gap-1' 
             onClick={e => {
               let contact = document.getElementById("contact");
               e.preventDefault();  // Stop Page Reloading
@@ -19,7 +19,7 @@ const MobileNavigation = () => {
           </a>
         </li>
         <li>
-          <a href="/"  className='flex flex-col justify-center items-center gap-1' 
+          <a className='flex flex-col justify-center items-center gap-1' 
             onClick={e => {
               e.preventDefault();  // Stop Page Reloading
               window.scrollTo({ top:0, behavior: "smooth"});
@@ -30,7 +30,7 @@ const MobileNavigation = () => {
           </a>
         </li>
         <li>
-          <a href="/"  className='flex flex-col justify-center items-center gap-1' 
+          <a className='flex flex-col justify-center items-center gap-1' 
             onClick={e => {
               let projects = document.getElementById("projects");
               e.preventDefault();  // Stop Page Reloading

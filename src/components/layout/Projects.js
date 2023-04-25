@@ -45,7 +45,7 @@ const Projects = () => {
                   <ul className="flex flex-wrap gap-1 mt-2">
                     { item.technologies.map(i => {
                       return (
-                        <ListItem name={i} className="bg-secondary p-1 px-3 border border-text-primary border-opacity-10 rounded-md text-xs text-white dark:text-text-primary"/>
+                        <ListItem key={i} name={i} className="bg-secondary p-1 px-3 border border-text-primary border-opacity-10 rounded-md text-xs text-white dark:text-text-primary"/>
                       )})
                     }
                   </ul>

@@ -8,6 +8,7 @@ const Logo = () => {
     <section className="flex flex-col md:flex-row gap-4 items-center">
       <span className="p-1 rounded-md bg-primary">
         <Image
+          alt="logo"
           className="h-4 w-4"
           src={logodark}
         />
