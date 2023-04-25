@@ -1,5 +1,18 @@
 import '@/styles/globals.css'
+import BaseLayout from '@/layouts/baseLayout'
+import { ThemeProvider } from 'next-themes'
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+const App = ({ Component, pageProps }) => {
+
+  return (
+    <>
+      <ThemeProvider enableSystem={true} attribute="class">
+        <BaseLayout>
+          <Component {...pageProps} />
+        </BaseLayout>
+      </ThemeProvider>
+    </>
+  )
 }
+
+export default App

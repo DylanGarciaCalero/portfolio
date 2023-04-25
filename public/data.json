@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "name": "diorama",
+    "image": "/images/diorama-preview.jpg",
+    "description": "This project was created as a collaboration project for Arteveldehogeschool. It enables collaboration between campusses and organisations to connect in order to organise events.",
+    "github": "https://github.com/pgmgent-2122-im/diorama-DylanGarciaCalero",
+    "technologies": [
+      "react",
+      "react-three-fiber",
+      "threejs",
+      "firebase",
+      "Illustrator",
+      "geolocation API",
+      "leaflet"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "artifact",
+    "image": "/images/artifact-preview.png",
+    "description": "This project was created as a collaboration project for Arteveldehogeschool. It enables collaboration between campusses and organisations to connect in order to organise events.",
+    "github": "https://github.com/DylanGarciaCalero/Artifact",
+    "technologies": [
+      "react",
+      "react-native",
+      "expo",
+      "expo-location",
+      "firebase",
+      "firestore"
+    ]
+    
+  },
+  {
+    "id": 3,
+    "name": "campus-buurt",
+    "image": "/images/campusbuurt-preview.png",
+    "description": "This project was created as a collaboration project for Arteveldehogeschool. It enables collaboration between campusses and organisations to connect in order to organise events.",
+    "github": "https://github.com/DylanGarciaCalero/Campus-buurt",
+    "technologies": [
+      "nextjs",
+      "tailwind",
+      "apollo client",
+      "graphQL",
+      "formik",
+      "yup"
+    ]
+  }
+]
