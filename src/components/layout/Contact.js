@@ -74,7 +74,7 @@ const Contact = () => {
             <textarea className='text-secondary bg-gray-100 h-32 md:h-full w-full p-2' name="message" required placeholder='Your message'/>
           </span>
         </div>
-        <input className='bg-secondary md:bg-secondary md:absolute mt-2 md:mt-0 -bottom-12 right-0 text-white w-1/4 px-8 py-2 cursor-pointer' type="submit" value="Send"/>
+        <input className='bg-secondary md:bg-secondary hover:bg-highlight md:absolute mt-2 md:mt-0 -bottom-12 right-0 text-white w-1/4 px-8 py-2 cursor-pointer' type="submit" value="Send"/>
       </form>
     </section>
   );
