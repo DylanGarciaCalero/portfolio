@@ -15,7 +15,7 @@ const inter = Maven_Pro({
 const BaseLayout = ({ children }) => {
   
   return (
-    <div id="wrapper" className={`bg-light dark:bg-dark p-0 lg:p-10 md:pb-0 lg:pb-0 lg:px-52 ${inter.variable} font-sans`}>
+    <div id="wrapper" className={`bg-light dark:bg-dark p-0 lg:p-10 md:pb-0 lg:pb-0 transition ease-in-out duration-200 lg:px-52 ${inter.variable} font-sans`}>
       <div id="content" className="min-h-screen pb-10 md:pb-0 md:rounded-t-lg">
         <Header/>
         <span className="absolute top-4 right-4 flex flex-col gap-4 md:hidden">

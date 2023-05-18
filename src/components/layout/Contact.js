@@ -2,8 +2,23 @@ import emailjs from 'emailjs-com'
 import { useState, useEffect } from 'react';
 import Lottie from 'react-lottie'
 import messagesLottie from '../../lotties/messages'
+import { motion } from 'framer-motion'
 
 const Contact = () => {
+
+  const divEnter = {
+    hide: {
+        opacity: 0,
+        x: -100,
+    },
+    show: {
+        opacity: 1,
+        x: 0,
+        transition: {
+            duration: 0.7,
+        },
+    },
+  };
 
   const [sent, setSent] = useState(false)
   const [loading, setLoading] = useState(false)
@@ -54,7 +69,13 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className='md:mt-14 pt-10 md:pt-2 flex flex-col md:flex-row w-full mx-auto items-center p-2 bg-white md:h-52 dark:bg-primary relative'>
+    <motion.div id="contact" 
+      className='md:mt-14 pt-10 md:pt-2 flex flex-col md:flex-row w-full mx-auto items-center p-2 bg-white md:h-52 dark:bg-primary relative'
+      initial="hide"
+      whileInView="show"
+      exit="hide"
+      variants={divEnter}
+    >
       <div className='w-full md:w-1/3 mb-4 md:mb-0 text-lg md:text-3xl font-semibold flex flex-col gap-2 pl-4'>
         <span>Love to hear from you,</span>
         <span>Get in touch !</span>
@@ -76,7 +97,7 @@ const Contact = () => {
         </div>
         <input className='bg-secondary md:bg-secondary hover:bg-highlight md:absolute mt-2 md:mt-0 -bottom-12 right-0 text-white w-1/4 px-8 py-2 cursor-pointer' type="submit" value="Send"/>
       </form>
-    </section>
+    </motion.div>
   );
 };
 

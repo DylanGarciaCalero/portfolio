@@ -1,12 +1,26 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import ListItem from "../list/ListItem";
-import Button from "../buttons/Button";
+import { motion } from "framer-motion"
 
 const Projects = () => {
 
   const [data , setData] = useState(null)
   const [selectedItem, setSelectedItem] = useState(null)
+
+  const divEnter = {
+    hide: {
+        opacity: 0,
+        y: 200,
+    },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.7,
+        },
+    },
+  };
 
   useEffect(() => {
     // Fetch Function   
@@ -25,12 +39,18 @@ const Projects = () => {
 
   if (data) {
     return (
-      <section id="projects" className="p-4 pb-10 mb-10 md:mb-0 md:pb-4 md:p-0 bg-white md:bg-transparent md:dark:bg-transparent dark:bg-primary md:pt-10 md:rounded-lg md:mx-auto">
+      <motion.div id="projects" 
+        className="p-4 pb-10 mb-10 md:mb-0 md:pb-4 md:p-0 bg-white md:bg-transparent md:dark:bg-transparent dark:bg-primary md:pt-10 md:rounded-lg md:mx-auto"
+        initial="hide"
+        whileInView="show"
+        exit="hide"
+        variants={divEnter}
+      >
         <span className="flex items-center justify-between">
           <p className="text-lg font-semibold text-text-primary md:dark:text-primary">My projects</p>
           <a href="https://github.com/DylanGarciaCalero?tab=repositories" target="_blank" className="bg-secondary text-center cursor-pointer inline-block p-2 px-3 w-fit border border-text-primary border-opacity-10 transition ease-in-out duration-500 hover:bg-highlight hover:text-primary rounded-md text-sm text-white dark:text-text-primary">visit my github</a>
         </span>
-        <ul className="mt-4 grid grid-flow-row md:grid-cols-3 gap-10">
+        <ul className="mt-4 grid grid-flow-row md:grid-cols-2 2xl:grid-cols-3 gap-10">
           {data.map((item, index) => {
             return (
               <li key={item.id} className="h-[30rem] md:p-2 md:bg-white md:dark:bg-primary rounded-lg">
@@ -58,7 +78,7 @@ const Projects = () => {
             );
           })}
         </ul>
-      </section>
+      </motion.div>
     );
   } else {
     return (
