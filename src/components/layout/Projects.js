@@ -11,11 +11,11 @@ const Projects = () => {
   const divEnter = {
     hide: {
         opacity: 0,
-        y: 200,
+        x: -100,
     },
     show: {
         opacity: 1,
-        y: 0,
+        x: 0,
         transition: {
             duration: 0.7,
         },
